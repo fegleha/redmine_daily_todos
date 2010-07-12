@@ -3,3 +3,9 @@
 <h3><%=l(:'daily_todos.entry.new')%></h3>
 
 <%= render :partial => 'form' %>
+
+<% content_for :header_tags do %>
+  <%= javascript_include_tag 'time_zone', :plugin => 'daily_todos' %>
+<% end %>
+
+<%= javascript_tag "setCurrentTime();" %>

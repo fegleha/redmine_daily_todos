@@ -16,6 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :daily_todos
   map.resources :daily_todo_entries
   map.resources :daily_todo_comments
+  map.resources :daily_todo_groups
+  map.resources :daily_todo_group_details
 
   map.with_options :controller => 'daily_todo_comments' do |m2|
     m2.todo_comment_new  'daily_todos/:daily_todo_id/comments/new',      :action => 'new' 
@@ -25,6 +27,14 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => 'daily_todo_entries' do |m2|
     m2.todo_entry_new 'daily_todos/:daily_todo_id/entries/new', :action => 'new'
     m2.todo_entry_edit 'daily_todos/:daily_todo_id/entries/:id/edit', :action => 'edit'
+  end
+
+  map.with_options :controller => 'daily_todo_groups' do |m2|
+    m2.todo_group_show 'daily_todo_groups/show', :action => 'show'
+  end
+
+  map.with_options :controller => 'daily_todo_group_details' do |m2|
+    m2.todo_group_show 'daily_todo_group_details/show', :action => 'show'
   end
 
   map.connect 'daily_todos/:date/new', :controller => 'daily_todos', :action => 'create_todo'

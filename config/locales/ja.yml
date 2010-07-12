@@ -48,3 +48,7 @@ ja:
       edit_error: 他人のコメントを編集することができません。
       delete_error: 他人のコメントを削除することができません。
       delete: コメントが削除されました。
+
+    group:
+      management: グループの管理
+      name: グループ名

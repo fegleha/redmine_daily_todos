@@ -1,0 +1,21 @@
+<h3><%= l(:'daily_todos.group.list_all_group') %></h3>
+<table>
+  <% @daily_todo_groups.each_with_index do |group, i| %>
+    <tr>
+      <td align="right"> <%= (i+1).to_s + '.' %> </td>
+      <td>
+        <%= link_to (textilizable group.group_name),
+          {:action => 'edit', :id => group.id} %>
+      </td>
+      <td width="150px;" align="right">
+        <%= link_to l(:'daily_todos.group.delete'), group,
+          :method => :delete,
+          :confirm => l(:'daily_todos.delete_confirm') %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<br />
+<%= link_to(l(:'daily_todos.group.new'), :action => :show) %>
+<br />
+<br />

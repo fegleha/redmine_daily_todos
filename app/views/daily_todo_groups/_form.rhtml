@@ -1,0 +1,30 @@
+<% form_for @daily_todo_group do |f| %>
+  <% if @daily_todo_group.errors.any? %>
+    <div id="error_explanation">
+      <h4>
+        <%= pluralize(@daily_todo_group.errors.count, "error") %>:
+      </h4>
+      <ul>
+        <% @daily_todo_group.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.hidden_field(:id) %>
+  <h3>Enter Group Details</h3>
+  <div>
+    <%= f.label :group_name, l(:'daily_todos.group.name') %>
+    <%= f.text_field :group_name, :value => @daily_todo_group.group_name ,
+      :maxlength => 100, :style => "width:350px;" %>
+    <% if @daily_todo_group.id.nil? %>
+      <%= submit_tag l(:'daily_todos.group.add') %>
+    <% else %>
+      <%= submit_tag l(:'daily_todos.group.update') %>
+    <% end %>
+
+  </div>
+<% end %>

@@ -47,3 +47,7 @@ vi:
       edit_error: Bạn không thể sửa comment của người khác.
       delete_error: Bạn không thể xóa comment của người khác.
       delete: Comment đã bị xóa
+
+    group:
+      management: Quản lý nhóm
+      name: Tên nhóm
