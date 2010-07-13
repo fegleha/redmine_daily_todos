@@ -1,0 +1,54 @@
+en:
+  daily_todos:
+    user: User
+    plan: Plan
+    result: Result
+    lunch: Lunch
+    time: Time
+    button_save: Save
+    button_create_and_continue: Create and continue
+    button_update: Update
+    cancel: Cancel
+    title: Daily TODOs
+    view: View
+    you_no_todo: You have no TODO for this date.
+    create_link: Click here to create.
+    no_todo: No TODO.
+    date: Date
+    edit: Edit
+    delete: Delete
+    delete_confirm: Are you sure?
+    comments: Comments
+    comment_user: Comment User
+    users_who_have_created_todo: Users who have created TODO
+    users_who_have_not_created_todo: Users who haven't created TODO yet
+    message: '<p>TODO is not a substitute for Issues (tickets) of Redmine. TODO helps you manage your <b>own</b> list of work and also helps others know what you are doing. It is like a notebook or diary to help you memorize what you are doing.</p>
+  <p>Thus, contents in TODO is not limited to Issues (tickets) of Redmine, but more liberal. For example in TODO you can write a programming technique you are planning to study, or a new technology like NoSQL.</p>' 
+    ungroup: Ungroup
+
+    todo:
+      delete: TODO deleted
+      delete_error: You cannot delete other's TODO 
+      create_error: You have written TODO for this date
+
+    entry:
+      new: New Entry
+      edit: Edit Entry
+      add: Add Entry
+      create_error: You cannot create entry in the other's TODO
+      edit_error: You cannot edit other's entry
+      delete: Entry deleted
+      delete_error: You cannot delete other's entry
+      entry_create: Entry created
+      entry_update: Entry updated
+
+    login_notice: Please login
+
+    comment:
+      new: New Comment
+      edit: Edit Comment
+      edit_error: You cannot edit other's comment
+      delete_error: You cannot delete other's comment
+      delete: Comment deleted
+      comment_create: Comment created
+      comment_update: Comment updated
