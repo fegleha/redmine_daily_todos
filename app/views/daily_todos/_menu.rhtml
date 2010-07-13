@@ -1,7 +1,0 @@
-<% if User.current.admin? %>
-  <div class="contextual">
-    <%= link_to(l(:'daily_todos.title'), {:controller => 'daily_todos', :action => 'all_users'}) %>
-    | <%= link_to(l(:'daily_todos.group.management'), { :controller => 'daily_todo_groups', :action => 'show' }) %>
-    | <%= link_to(l(:'daily_todos.group_detail.management'), { :controller => 'daily_todo_group_details', :action => 'show' }) %>
-  </div>
-<%  end %>
