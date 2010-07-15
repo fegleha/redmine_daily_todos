@@ -38,5 +38,6 @@
   <% end %>
 <% end %>
 
-<%= wikitoolbar_for 'daily_todo_entry_plan' %>
-<%= wikitoolbar_for 'daily_todo_entry_result' %>
+<%= add_color_picker_lib %>
+<%= wikitoolbar_with_color_for('daily_todo_entry_plan', 'jstoolbar_plan', 'color_button_plan') %>
+<%= wikitoolbar_with_color_for('daily_todo_entry_result', 'jstoolbar_result', 'color_button_result') %>
